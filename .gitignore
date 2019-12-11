@@ -1,4 +1,5 @@
 lib
 node_modules
-package.yaml
 coverage
+
+packaged-template.yaml

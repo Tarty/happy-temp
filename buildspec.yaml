@@ -17,4 +17,4 @@ phases:
       - sam package --template-file template.yaml --output-template-file packaged-template.yaml --s3-bucket happy-temp
 artifacts:
     files:
-      - packaged-template.yml
+      - packaged-template.yaml

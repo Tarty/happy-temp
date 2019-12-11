@@ -1,0 +1,49 @@
+env:
+  es6: true
+  node: true
+extends: '@ridedott/eslint-config'
+overrides:
+  - env:
+      jest: true
+    files:
+      - src/**/*spec.ts
+    rules:
+      '@typescript-eslint/no-explicit-any': off
+      '@typescript-eslint/no-magic-numbers': off
+      '@typescript-eslint/no-non-null-assertion': off
+      class-methods-use-this: off
+      eslint(max-lines-per-function): off
+      jest/no-expect-resolves: warn
+      jest/no-standalone-expect: warn
+      jest/require-top-level-describe: off
+      max-lines-per-function: off
+      max-statements: off
+      no-magic-numbers: off
+      unicorn/no-unsafe-regex: off
+      unicorn/prevent-abbreviations:
+        - error
+        - whitelist:
+            params: true
+parserOptions:
+  ecmaVersion: 10
+  project: tsconfig.json
+  sourceType: module
+rules:
+  '@typescript-eslint/explicit-function-return-type': warn
+  '@typescript-eslint/no-explicit-any': warn
+  '@typescript-eslint/no-magic-numbers': warn
+  '@typescript-eslint/no-non-null-assertion': warn
+  '@typescript-eslint/no-unused-vars': warn
+  '@typescript-eslint/no-misused-promises': warn
+  '@typescript-eslint/typedef': warn
+  immutable/no-let: warn
+  immutable/no-this: warn
+  init-declarations: warn
+  max-lines-per-function: warn
+  max-lines: warn
+  max-params: warn
+  max-statements: warn
+  no-await-in-loop: warn
+  no-bitwise: warn
+  no-case-declarations: warn
+  no-dupe-class-members: warn

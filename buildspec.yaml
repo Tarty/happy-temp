@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - npm ci
+  build:
+    commands:
+      - npm run lint
+      - npm run test:coverage
+      - npm run build
+      - sam package --template-file template.yaml --output-template-file packaged-template.yaml --s3-bucket happy-temp
+artifacts:
+    files:
+      - packaged-template.yml

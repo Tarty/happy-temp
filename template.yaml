@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  CurrentTemperatureInCovilha:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lib
+      Handler: index.currentTemperatureInCovilha
+      Runtime: nodejs12.x
+      Events:
+        HappyTempApi:
+          Type: Api
+          Properties:
+            Path: /currenttempincovilha
+            Method: GET
+
+  AverageTemperatureInSfaxFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lib
+      Handler: index.averageTemperatureInSfax
+      Runtime: nodejs12.x
+      Events:
+        HappyTempApi:
+          Type: Api
+          Properties:
+            Path: /avgtempinsfax
+            Method: GET

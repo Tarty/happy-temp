@@ -14,8 +14,9 @@
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
   },
+  "description": "Assignment regarding Node.js/Typescript/AWS",
   "homepage": "https://github.com/Tarty/happy-temp#readme",
-  "keywords": [],
+  "keywords": ["assignments"],
   "license": "ISC",
   "main": "lib/index.js",
   "name": "happy-temp",

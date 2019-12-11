@@ -26,3 +26,16 @@ Resources:
           Properties:
             Path: /avgtempinsfax
             Method: GET
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: happy-temp
+    Description: Assignment regarding Node.js/Typescript/AWS
+    Author: Tarty
+    SpdxLicenseId: ISC
+    LicenseUrl: LICENSE.txt
+    ReadmeUrl: README.md
+    Labels: ['assignments']
+    HomePageUrl: https://github.com/Tarty/happy-temp
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://github.com/Tarty/happy-temp

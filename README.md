@@ -2,6 +2,11 @@
 
 Uses Node.JS/Typescript/AWS Lambda/API Gateway/SAM.
 
+#### Endpoints
+
+* [currenttempincovilha](https://3qww4coq8b.execute-api.eu-west-1.amazonaws.com/prod/currenttempincovilha)
+* [avgtempinsfax](https://3qww4coq8b.execute-api.eu-west-1.amazonaws.com/prod/avgtempinsfax)
+
 #### According to the assignment, has been done in this repository:
 
 * `/currenttempincovilha` endpoint, under a cache layer set in the **API Gateway**

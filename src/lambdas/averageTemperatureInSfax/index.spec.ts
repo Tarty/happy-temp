@@ -1,11 +1,14 @@
+import { OK } from 'http-status-codes';
+
 import { averageTemperatureInSfax } from '.';
 
 describe('happy flows', (): void => {
-  it('should return the correct value', async (): Promise<void> => {
-    expect.assertions(1);
+  it('returns the expected average temperature value', async (): Promise<void> => {
+    expect.assertions(2);
 
-    const result = await averageTemperatureInSfax();
+    const { body, statusCode } = await averageTemperatureInSfax();
 
-    expect(result).toStrictEqual({ body: '24', statusCode: 200 });
+    expect(statusCode).toBe(OK);
+    expect(JSON.parse(body)).toStrictEqual({ temperature: 25.4 });
   });
 });

@@ -3,6 +3,11 @@
   "bugs": {
     "url": "https://github.com/Tarty/happy-temp/issues"
   },
+  "dependencies": {
+    "http-status-codes": "^1.4.0",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0"
+  },
   "devDependencies": {
     "@ridedott/eslint-config": "^0.4.73",
     "@types/aws-lambda": "^8.10.37",
@@ -10,13 +15,17 @@
     "@types/node": "^12.12.17",
     "eslint": "^6.7.2",
     "jest": "^24.9.0",
+    "nock": "^11.7.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
   },
   "description": "Assignment regarding Node.js/Typescript/AWS",
   "homepage": "https://github.com/Tarty/happy-temp#readme",
-  "keywords": ["assignments"],
+  "keywords": [
+    "assignments"
+  ],
   "license": "ISC",
   "main": "lib/index.js",
   "name": "happy-temp",
@@ -26,7 +35,9 @@
   },
   "scripts": {
     "build": "run-s clean build:*",
-    "build:ts": "tsc --project tsconfig.json",
+    "build:ts": "tsc --project tsconfig.production.json",
+    "build:package": "cp package*.json ./lib && cd lib && npm ci --production",
+    "build:ts:watch": "tsc --project tsconfig.production.json --watch",
     "clean": "rm -rf lib",
     "lint": "eslint --resolve-plugins-relative-to './node_modules/@ridedott/eslint-config' '**/*.ts'",
     "lint:fix": "eslint --fix --resolve-plugins-relative-to './node_modules/@ridedott/eslint-config' '**/*.ts'",

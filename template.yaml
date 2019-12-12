@@ -1,20 +1,26 @@
-AWSTemplateFormatVersion : '2010-09-09'
+AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Resources:
-  CurrentTemperatureInCovilhaFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      CodeUri: lib
-      Handler: index.currentTemperatureInCovilha
-      Runtime: nodejs12.x
-      Events:
-        HappyTempApi:
-          Type: Api
-          Properties:
-            Path: /currenttempincovilha
-            Method: GET
 
-  AverageTemperatureInSfaxFunction:
+Resources:
+  HappyTempApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      CacheClusterEnabled: true
+      CacheClusterSize: '0.5'
+      StageName: prod
+      MethodSettings:
+        - ResourcePath: /avgtempinsfax
+          HttpMethod: GET
+          CachingEnabled: true
+          CacheTtlInSeconds: 3600
+          LoggingLevel: INFO
+        - ResourcePath: /currenttempincovilha
+          HttpMethod: GET
+          CachingEnabled: true
+          CacheTtlInSeconds: 120
+          LoggingLevel: INFO
+
+  AverageTemperatureInSfax:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: lib
@@ -24,7 +30,22 @@ Resources:
         HappyTempApi:
           Type: Api
           Properties:
+            RestApiId: !Ref HappyTempApi
             Path: /avgtempinsfax
+            Method: GET
+
+  CurrentTemperatureInCovilha:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lib
+      Handler: index.currentTemperatureInCovilha
+      Runtime: nodejs12.x
+      Events:
+        HappyTempApi:
+          Type: Api
+          Properties:
+            RestApiId: !Ref HappyTempApi
+            Path: /currenttempincovilha
             Method: GET
 
 Metadata:

@@ -7,6 +7,7 @@ overrides:
       jest: true
     files:
       - src/**/*spec.ts
+      - test/**/*.ts
     rules:
       '@typescript-eslint/no-explicit-any': off
       '@typescript-eslint/no-magic-numbers': off
@@ -31,7 +32,6 @@ parserOptions:
 rules:
   '@typescript-eslint/explicit-function-return-type': warn
   '@typescript-eslint/no-explicit-any': warn
-  '@typescript-eslint/no-magic-numbers': warn
   '@typescript-eslint/no-non-null-assertion': warn
   '@typescript-eslint/no-unused-vars': warn
   '@typescript-eslint/no-misused-promises': warn
@@ -47,3 +47,6 @@ rules:
   no-bitwise: warn
   no-case-declarations: warn
   no-dupe-class-members: warn
+  '@typescript-eslint/no-magic-numbers': off
+  no-process-env: off
+  no-console: off

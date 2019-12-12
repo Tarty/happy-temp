@@ -1,0 +1,152 @@
+[
+  {
+    "date": "2018-06-01",
+    "temperatureMax": 25,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-02",
+    "temperatureMax": 26,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-03",
+    "temperatureMax": 27,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-04",
+    "temperatureMax": 26,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-05",
+    "temperatureMax": 26,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-06",
+    "temperatureMax": 25,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-07",
+    "temperatureMax": 27,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-08",
+    "temperatureMax": 25,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-09",
+    "temperatureMax": 27,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-10",
+    "temperatureMax": 28,
+    "temperatureMin": 24
+  },
+  {
+    "date": "2018-06-11",
+    "temperatureMax": 28,
+    "temperatureMin": 25
+  },
+  {
+    "date": "2018-06-12",
+    "temperatureMax": 27,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-13",
+    "temperatureMax": 27,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-14",
+    "temperatureMax": 27,
+    "temperatureMin": 24
+  },
+  {
+    "date": "2018-06-15",
+    "temperatureMax": 27,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-16",
+    "temperatureMax": 27,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-17",
+    "temperatureMax": 27,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-18",
+    "temperatureMax": 28,
+    "temperatureMin": 24
+  },
+  {
+    "date": "2018-06-19",
+    "temperatureMax": 26,
+    "temperatureMin": 22
+  },
+  {
+    "date": "2018-06-20",
+    "temperatureMax": 27,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-21",
+    "temperatureMax": 27,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-22",
+    "temperatureMax": 28,
+    "temperatureMin": 24
+  },
+  {
+    "date": "2018-06-23",
+    "temperatureMax": 28,
+    "temperatureMin": 25
+  },
+  {
+    "date": "2018-06-24",
+    "temperatureMax": 28,
+    "temperatureMin": 25
+  },
+  {
+    "date": "2018-06-25",
+    "temperatureMax": 28,
+    "temperatureMin": 25
+  },
+  {
+    "date": "2018-06-26",
+    "temperatureMax": 28,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-27",
+    "temperatureMax": 29,
+    "temperatureMin": 23
+  },
+  {
+    "date": "2018-06-28",
+    "temperatureMax": 28,
+    "temperatureMin": 24
+  },
+  {
+    "date": "2018-06-29",
+    "temperatureMax": 36,
+    "temperatureMin": 26
+  },
+  {
+    "date": "2018-06-30",
+    "temperatureMax": 32,
+    "temperatureMin": 25
+  }
+]
